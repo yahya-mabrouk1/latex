@@ -1,0 +1,35 @@
+\section{Dérivation de la fonction puissance}\label{sec:10}
+
+\paragraph{Énoncé}
+
+Pour tout entier $k \in \N$, la fonction $f_k : x \mapsto x^k$ est dérivable sur $\R$ et vérifie :
+\[
+    f_k'(x) = k x^{k-1}.
+\]
+
+\paragraph{Preuve par récurrence sur $k$}
+
+\paragraph{Cas de base.}
+Pour $k=0,1,2$, le résultat est établi dans \hyperref[sec:8]{la section 8} :
+\[
+    (x^0)' = 0, \qquad (x^1)' = 1, \qquad (x^2)' = 2x.
+\]
+
+\paragraph{Hérédité.}
+On suppose que pour un certain $k \geq 1$, la fonction $x \mapsto x^k$ est dérivable et que $(x^k)' = k x^{k-1}$.  
+On considère $f_{k+1}(x) = x^{k+1} = x \cdot x^k$.
+
+Par la règle du produit :
+\[
+    (x^{k+1})' = (x \cdot x^k)' = x' \cdot x^k + x \cdot (x^k)'.
+\]
+Comme $x' = 1$ et par hypothèse de récurrence $(x^k)' = k x^{k-1}$, on obtient :
+\[
+    (x^{k+1})' = x^k + x \cdot k x^{k-1} = (k+1) x^k.
+\]
+
+\paragraph{Conclusion.}
+Par récurrence, pour tout $k \in \N$,
+\[
+    (x^k)' = k x^{k-1}.
+\]

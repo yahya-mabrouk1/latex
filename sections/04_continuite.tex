@@ -1,0 +1,57 @@
+\section{La continuité}
+
+\paragraph{Définition en un point.}
+Soit $f : D_f \to \R$ et $c \in D_f$.  
+La fonction $f$ est continue en $c$ si
+\[
+    \lim_{x \to c} f(x) = f(c).
+\]
+Ceci signifie :
+\[
+    \forall \eps > 0,\ \exists \delta > 0 \text{ tel que } |x-c| < \delta \implies |f(x)-f(c)| < \eps.
+\]
+
+\paragraph{Continuité sur un intervalle.}
+La fonction $f$ est continue sur un intervalle ouvert $]a,b[$ si elle est continue en tout point de $]a,b[$.  
+Elle est continue sur un intervalle fermé $[a,b]$ si elle est continue sur $]a,b[$, continue à droite en $a$ et continue à gauche en $b$.
+
+\paragraph{Exemples de discontinuité.}
+
+\paragraph{Discontinuité par saut.}
+On considère
+\[
+f(x)=
+\begin{cases}
+    x+1 & \text{si } x<0,\\
+    2 & \text{si } x=0,\\
+    x^2 & \text{si } x>0.
+\end{cases}
+\]
+
+On a
+
+\[
+    \lim_{x\to 0^-} f(x)=1,\qquad \lim_{x\to 0^+} f(x)=0,\qquad f(0)=2.
+\]
+Les limites à gauche et à droite sont différentes, donc la limite en $0$ n’existe pas et $f$ n’est pas continue en $0$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\linewidth]{images/piecewise.png}
+    \caption{Discontinuité par saut en $0$.}
+\end{figure}
+
+\paragraph{Discontinuité par absence de définition.}
+On considère
+\[
+g(x)=\frac{5+x^2}{x-3}.
+\]
+La fonction est définie sur $\R\setminus\{3\}$.
+Elle n’est pas définie en $x=3$, donc elle ne peut pas être continue en ce point.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\linewidth]{images/quotient.png}
+    \caption{Comportement de $g$ au voisinage de $3$.}
+\end{figure}
+

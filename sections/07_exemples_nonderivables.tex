@@ -1,0 +1,36 @@
+\section{Fonctions continues non dérivables}
+
+\paragraph{1. Fonction valeur absolue}
+Considérons la fonction
+\[
+    f : \R \longrightarrow \R, \quad f(x) = |x|.
+\]
+Cette fonction est continue en tout point, et en particulier en \(x=0\). Cependant, elle n'est pas dérivable en \(0\) car la limite du taux de variation à gauche et à droite diffère :
+\[
+\lim_{x \to 0^-} \frac{|x|-0}{x-0} = -1 \quad \text{et} \quad \lim_{x \to 0^+} \frac{|x|-0}{x-0} = 1.
+\]
+\emph{Ceci en fait un exemple classique de fonction continue mais non dérivable.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{images/non_derivable.png}
+    \caption{$f(x)=|x|$, continue mais non dérivable en $0$}
+\end{figure}
+
+\paragraph{2. Fonction racine carrée}
+Considérons la fonction
+\[
+    g : [0, +\infty[ \longrightarrow \R, \quad g(x) = \sqrt{x}.
+\]
+Elle est continue sur son domaine, et donc en \(x=0\). Cependant, elle n'est pas dérivable en \(0\) car la pente de la tangente devient infinie :
+\[
+\lim_{h \to 0^+} \frac{\sqrt{0+h}-0}{h} = \infty.
+\]
+\emph{Ceci illustre qu'une fonction peut être continue à un point mais non dérivable si la courbe est "trop raide".}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{images/racine.png}
+    \caption{$g(x)=\sqrt{x}$, continue mais non dérivable en $0$}
+\end{figure}
+

@@ -1,0 +1,52 @@
+\section{Méthode de Newton}\label{sec:11}
+
+\paragraph{Principe}
+
+On cherche une solution de $f(x) = 0$.  
+À partir d’une approximation initiale $x_0$, on définit la suite :
+\[
+    x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}.
+\]
+
+\paragraph{Algorithme (Python)}
+
+\begin{lstlisting}
+def newton(f, df, x0, N):
+    """
+    Applique la methode de Newton
+    pour approcher une racine de la fonction f.
+
+    Parametres
+    ----------
+    f : fonction
+        Fonction dont on cherche une racine (f(x) = 0).
+    df : fonction
+        Derivee de la fonction f.
+    x0 : float
+        Approximation initiale de la racine.
+    N : int
+        Nombre d iterations de la methode.
+
+    Retour
+    ------
+    float
+        Approximation de la racine apres N iterations.
+    """
+    x = x0
+    for _ in range(N):
+        x = x - f(x)/df(x)
+    return x
+\end{lstlisting}
+
+\paragraph{Exemple}
+
+On cherche une approximation de $\sqrt{2}$ comme racine de $f(x) = x^2 - 2$.
+On a $f'(x) = 2x$ et on choisit $x_0 = 1$.
+
+\[
+    x_1 = 1 - \frac{1^2 - 2}{2 \cdot 1} = 1.5,
+    \qquad
+    x_2 = 1.5 - \frac{1.5^2 - 2}{2 \cdot 1.5} = 1.416\overline{6}.
+\]
+
+On obtient rapidement $\sqrt{2} \approx 1.4142$.

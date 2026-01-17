@@ -1,0 +1,35 @@
+\section{Preuves des dérivées de base} \label{sec:8}
+
+On rappelle la définition de la dérivée d'une fonction $f$ en un point $x \in \R$ :
+\[
+    f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h},
+\]
+lorsque cette limite existe.
+
+\paragraph{Dérivée de $f_0(x) = 1$.}
+\[
+    \frac{f_0(x+h) - f_0(x)}{h} = \frac{1-1}{h} = 0,
+    \qquad
+    f_0'(x) = \lim_{h \to 0} 0 = 0.
+\]
+
+\paragraph{Dérivée de $f_1(x) = x$.}
+\[
+    \frac{f_1(x+h) - f_1(x)}{h} = \frac{(x+h)-x}{h} = 1,
+    \qquad
+    f_1'(x) = \lim_{h \to 0} 1 = 1.
+\]
+
+\paragraph{Dérivée de $f_2(x) = x^2$.}
+\[
+    \frac{f_2(x+h) - f_2(x)}{h} = \frac{(x+h)^2 - x^2}{h} = \frac{2xh + h^2}{h} = 2x + h
+\]
+
+\[
+    f_2'(x) = \lim_{h \to 0} (2x + h) = 2x.
+\]
+
+\paragraph{Résultats.}
+\[
+    f_0'(x) = 0, \qquad f_1'(x) = 1, \qquad f_2'(x) = 2x.
+\]

@@ -1,0 +1,38 @@
+\section{Linéarité de la dérivation}\label{sec:9}
+
+On utilise la définition :
+\[
+    f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h},
+\]
+lorsque cette limite existe.
+
+\paragraph{Multiplication par une constante}
+
+Soit $f : \R \to \R$ dérivable en $x$ et soit $\alpha \in \R$. On définit $g(x) = \alpha f(x)$. Alors :
+\[
+    \frac{g(x+h) - g(x)}{h}
+    = \frac{\alpha f(x+h) - \alpha f(x)}{h}
+    = \alpha \frac{f(x+h) - f(x)}{h}.
+\]
+En passant à la limite lorsque $h \to 0$, on obtient :
+\[
+    g'(x) = \alpha f'(x).
+\]
+
+\paragraph{Somme de fonctions}
+
+Soient $f$ et $g$ dérivables en $x$ et soit $h(x) = f(x) + g(x)$. Alors :
+\[
+    \frac{h(x+h) - h(x)}{h}
+\]
+\[
+    = \frac{f(x+h) + g(x+h) - f(x) - g(x)}{h}
+\]
+\[
+    = \frac{f(x+h) - f(x)}{h} + \frac{g(x+h) - g(x)}{h}.
+\]
+
+En passant à la limite lorsque $h \to 0$, on obtient :
+\[
+    h'(x) = f'(x) + g'(x).
+\]
