@@ -1,0 +1,6 @@
+étudiant1: 22507666;BEN HASSINE;Youssef
+étudiant2: 22513083;ESHARIF;Moatez Bellah
+étudiant3:
+groupe: MI4
+adresse du projet gitlab: https://gitlab.isima.fr/yobenhassi/projet-latex
+
